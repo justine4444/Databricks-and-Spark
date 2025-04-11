@@ -1,0 +1,17 @@
+Spark consists of three layers
+
+1.) Driver node
+
+2.) Cluster manager
+
+3.) Worker node
+
+Driver node:
+    Driver node acts as a master node
+
+Cluster node:
+    Cluster node checks the Worker node availability based on the requests from the Driver node(master) and acknowledges to the Driver node.
+
+Worker node:
+    Worker node acts as a slave node, the driver node will directly contact the Worker node once got the availability of worker nodes
+from cluster manager, once the work has been completed, worker node will send it to the master node.         

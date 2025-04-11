@@ -1,0 +1,9 @@
+Master and Worker
+
+RDD
+
+DAG
+
+Transformation
+
+Action

@@ -1,0 +1,9 @@
+User submits the application to dbx
+Driver initiates the spark session
+DAG creates the logical plan
+The task executor requests for resources from the cluster manager
+Cluster manager allocates the worker nodes to the driver node
+Driver node directly contacts the worker nodes and assigns the tasks
+Once worker node completes the tasks it returns results to the driver node
+Driver returns the results to the User
+Application comes to an end

@@ -1,0 +1,10 @@
+Master and Worker
+
+Jobs
+
+Application
+
+Stages
+
+Partition or Partition
+

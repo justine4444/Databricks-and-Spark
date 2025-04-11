@@ -1,0 +1,28 @@
+Scalability:
+  Based on the task it will scale the number of worker nodes
+
+Fault Tolerant:
+    Spark uses lazy evaluation i.e first it performs action after that only it performs transformation
+    if failure has been happened it will get from DAG which happens at the transformation
+    DAG 
+    
+    catalyst optimizer - based on the transformations, it will perform all transformations at once as it reduces times and increases speed
+
+    transformation - returns a dataframe from another dataframe
+
+    action - returns a value from a dataframe
+
+Polygot:
+    Multiple languages can be used
+
+Real time streaming:
+    It supports Real time streaming and distributed computing
+
+Speed:
+    Since it is using in-memory it is 100 times faster than hadoop
+
+Rich libraries:
+    Supports varies libraries    
+
+
+    

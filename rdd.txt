@@ -1,0 +1,27 @@
+RDD (Resilient Distributed Dataset):
+RDD is a core concept in Spark.
+
+It represents a distributed collection of data stored in memory across multiple nodes in the cluster.
+
+When you load data (like from CSV, JSON, etc.), Spark creates RDDs and splits the data into partitions (small chunks) across the cluster.
+
+Transformations (like map, filter, reduce) are applied step-by-step, but they don’t execute right away — they are lazy.
+
+Spark tracks how each RDD was created from other RDDs through something called lineage.
+
+If any partition of the data is lost or a transformation fails, Spark can recalculate it from the lineage.
+Persist:
+
+    using Persist we can store the transformations in memory till the latest
+
+RDD:
+
+It consists of two one is lineage and another is DAG
+
+Lineage:
+
+Each time the transformations happen it will log in the memory, so that if any failure happens it can get the previous results and get.
+
+DAG(Direct Acyclic Graph):
+
+One after the other transformations.
